@@ -2,7 +2,7 @@
   "name": "MI-449-SS17-740-js-express",
   "version": "1.0.0",
   "description": "School project",
-  "main": "index.js",
+  "main": "server.js",
   "author": "William Norman <lordcrekit@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
