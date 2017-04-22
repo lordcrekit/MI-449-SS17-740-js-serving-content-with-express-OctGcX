@@ -8,7 +8,8 @@
   "scripts": {
     "lint:serverjs": "standard *.js",
     "lint:clientjs": "standard public/js/*.js",
-    "lint:": "run-s lint:*"
+    "lint:ejs": "ejslint views/*.ejs views/partials/*.ejs",
+    "lint": "run-s lint:*"
   },
   "dependencies": {
     "ejs": "^2.5.6",
@@ -16,6 +17,8 @@
     "jsonfile": "^2.4.0"
   },
   "devDependencies": {
+    "ejs-lint": "^0.3.0",
+    "npm-run-all": "^4.0.2",
     "standard": "^10.0.2"
   }
 }

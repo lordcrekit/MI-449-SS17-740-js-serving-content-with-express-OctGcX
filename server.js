@@ -14,14 +14,14 @@ app.get('/', function (req, res) {
 const CATS_DATA = 'data/cats.json'
 var catrouter = express.Router()
 
-catrouter.get('', function(req, res) {
-  jsonfile.readFile(CATS_DATA, function(err, obj) {
+catrouter.get('', function (req, res) {
+  jsonfile.readFile(CATS_DATA, function (err, obj) {
     if (err) { res.send(err); return }
     res.render('allcats.ejs', {title: 'ALL CATS xD', cats: obj.cats})
   })
 })
 
-catrouter.get('/*', function(req, res) {
+catrouter.get('/*', function (req, res) {
   var cat = req.url.slice(1)
   res.send(cat)
 })
