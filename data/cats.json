@@ -2,15 +2,61 @@
   "cats": {
     "spock": {
       "description": "He wakes me up at 4:30 every morning!",
-      "thumbnail": "spockercat.jpg"
+      "thumbnail": "spockercat.jpg",
+      "images": [
+        {
+          "src": "spock-as-ball.jpg",
+          "description": "Awwuh! It's a catball!"
+        },
+        {
+          "src": "spock-in-bag.jpg",
+          "description": "Cats love caves. Bags are basically caves!"
+        },
+        {
+          "src": "spock-on-william.jpg",
+          "description": "This cat always sits on me."
+        },
+        {
+          "src": "spock-with-rocky.jpg",
+          "description": "He loves dogs!"
+        },
+        {
+          "src": "spock-wrapped-up.jpg",
+          "description": "He doesn't mind being wrapped up it blankets lol"
+        }
+      ]
     },
     "summer": {
       "description": "She is double jointed lol",
-      "thumbnail": "summercat.jpg"
+      "thumbnail": "summercat.jpg",
+      "images": [
+        {
+          "src": "summer-in-woodchips.jpg",
+          "description": "This one always finds new places to sleep"
+        }, 
+        {
+          "src": "summer-on-iron-board.jpg",
+          "description": "She lies down on ironing boards"
+        },
+        {
+          "src": "summer-on-purse.jpg",
+          "description": "She lays down on our stuff and in our laundry"
+        }
+      ]
     },
     "echo": {
       "description": "He likes being bad",
-      "thumbnail": "doge.jpg"
+      "thumbnail": "doge.jpg",
+      "images": [
+        {
+          "src": "echo-on-lap.jpg",
+          "description": "He loves being on top of people! But he's too big to be a lapdog."
+        },
+        {
+          "src": "echo-with-hat.jpg",
+          "description": "He doesn't mind having a hat. Until he moves at least."
+        }
+      ]
     }
   }
 }
