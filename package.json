@@ -10,7 +10,9 @@
     "lint:clientjs": "standard public/js/*.js",
     "lint:ejs": "ejslint views/*.ejs views/partials/*.ejs",
     "lint:css": "echo we don\\'t use css xD",
-    "lint": "run-s lint:*"
+    "lint": "run-s lint:*",
+    "deploy:push": "git push heroku master",
+    "deploy": "run-s lint deploy:*"
   },
   "dependencies": {
     "ejs": "^2.5.6",
