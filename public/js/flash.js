@@ -1,5 +1,4 @@
-flashtext = (function() {
-
+var flashtext = (function () {
   /**
    * Every entry should be a function that takes and returns a color.
    * Colors that are generated are passed through every entry in order.
@@ -10,17 +9,14 @@ flashtext = (function() {
   var timeVariance = 500
   var elements = document.getElementsByClassName('ft')
 
-  function start() {
+  function start () {
     for (var i = 0; i < elements.length; i++) {
-      swapColor(elements[i])
-    }
-  }
-
-  function swapColor(element) {
-    element.style.color = getRandomColor()
-    setInterval(function() {
+      let element = elements[i]
       element.style.color = getRandomColor()
-    }, timeConst+Math.random()*timeVariance)
+      setInterval(function () {
+        element.style.color = getRandomColor()
+      }, timeConst + Math.random() * timeVariance)
+    }
   }
 
   function getRandomColor () {
@@ -29,7 +25,7 @@ flashtext = (function() {
     for (var i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)]
     }
-    for (c in colorModifiers) {
+    for (var c in colorModifiers) {
       color = c(color)
     }
     return color
@@ -41,7 +37,6 @@ flashtext = (function() {
     colorModifiers,
     start
   }
-
 })()
 
 flashtext.start()
