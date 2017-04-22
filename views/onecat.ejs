@@ -1,12 +1,36 @@
 <% include partials/top %>
 <main>
 <article>
-  <header><h2><%=catname%></h2></header>
-  <p><em>About <%=catname%>:</em><%=cat.description%></p>
-  <figure>
-    <img src="/img/<%=cat.picture || cat.thumbnail%>"/>
-    <figcaption>All images captured by site author</figcaption>
-  </figure>
+  <header><h1><%=catname%></h1></header>
+
+  <section>
+    <header><h2>Overview</h2></header>
+    <div class="content">
+      <p><em>About <%=catname%>:</em><%=cat.description%></p>
+      <figure>
+        <img src="/img/<%= cat.thumbnail %>"/>
+        <figcaption>All images captured by site author and their family</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <header><h2>Images xD</h2></header>
+    <div class="content">
+      <ul>
+        <% for (i in cat.images ) { %>
+        <li>
+          <h3><%=cat.images[i].src%></h3>
+          <figure>
+            <img src="/img/<%=cat.images[i].src%>"/>
+            <figcaption><%=cat.images[i].description%></figcaption>
+          </figure>
+        </li>
+        <% } %>
+      </ul>
+    </div>
+  </section>
+
 </article>
 </main>
 <% include partials/bot %>
