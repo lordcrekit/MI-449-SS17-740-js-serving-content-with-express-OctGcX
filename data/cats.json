@@ -1,0 +1,16 @@
+{
+  "cats": {
+    "spock": {
+      "description": "He wakes me up at 4:30 every morning!",
+      "thumbnail": "spockercat.jpg"
+    },
+    "summer": {
+      "description": "She is double jointed lol",
+      "thumbnail": "summercat.jpg"
+    },
+    "echo": {
+      "description": "He likes being bad",
+      "thumbnail": "doge.jpg"
+    }
+  }
+}
