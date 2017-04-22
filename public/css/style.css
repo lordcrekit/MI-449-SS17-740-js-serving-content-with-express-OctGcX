@@ -1,0 +1,41 @@
+nav {
+  padding: 10px;
+  background-color: lightblue;
+}
+
+nav a {
+  padding: 4px;
+  background-color: blue;
+}
+
+nav a:link {
+  color: white;
+}
+
+nav a:visited {
+  color: yellow;
+}
+
+main {
+  padding: 10px;
+  background-color: lightyellow;
+}
+
+section {
+  margin: 10px;
+  background-color: lightblue;
+}
+
+section h2 {
+  background-color: blue;
+  color: white;
+}
+
+section .content {
+  padding: 0 10px 10px 10px;
+}
+
+footer {
+  padding: 50px 0 10px 10px;
+  background-color: lightblue;
+}

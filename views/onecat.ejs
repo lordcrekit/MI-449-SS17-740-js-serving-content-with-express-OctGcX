@@ -1,0 +1,12 @@
+<% include partials/top %>
+<main>
+<article>
+  <header><h2><%=catname%></h2></header>
+  <p><em>About <%=catname%>:</em><%=cat.description%></p>
+  <figure>
+    <img src="/img/<%=cat.picture || cat.thumbnail%>"/>
+    <figcaption>All images captured by site author</figcaption>
+  </figure>
+</article>
+</main>
+<% include partials/bot %>

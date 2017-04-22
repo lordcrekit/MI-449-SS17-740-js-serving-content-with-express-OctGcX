@@ -3,8 +3,19 @@
 <h1>WELCOME</h1>
 <p>To the best website ever all about</p>
 <h2><% for (var i = 0; i < title.length; i++) { %><span class="ft"><%= title[i] %></span><% } %></h2>
-<figure>
-  <img src="img/spockercat.jpg"/>
-</figure>
+<section>
+  <header><h2>Cat of the day!</h2></header>
+  <div class="content">
+    <figure>
+      <img src="img/spockercat.jpg"/>
+    </figure>
+  </div>
+</section>
+<section>
+  <header><h2>Cat database</h2></header>
+  <div class="content">
+    <a href="cat/">Come look at all the cats!</a>
+  </div>
+</section>
 </main>
 <% include partials/bot %>

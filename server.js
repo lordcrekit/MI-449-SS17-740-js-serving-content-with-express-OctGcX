@@ -23,7 +23,10 @@ catrouter.get('', function (req, res) {
 
 catrouter.get('/*', function (req, res) {
   var cat = req.url.slice(1)
-  res.send(cat)
+  jsonfile.readFile(CATS_DATA, function (err, obj) {
+    if (err) { res.send(err); return }
+    res.render('onecat.ejs', {title: cat, catname: cat, cat: obj.cats[cat]})
+  })
 })
 
 app.use('/cat', catrouter)
