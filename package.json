@@ -9,6 +9,7 @@
     "lint:serverjs": "standard *.js",
     "lint:clientjs": "standard public/js/*.js",
     "lint:ejs": "ejslint views/*.ejs views/partials/*.ejs",
+    "lint:css": "echo we don\\'t use css xD",
     "lint": "run-s lint:*"
   },
   "dependencies": {
