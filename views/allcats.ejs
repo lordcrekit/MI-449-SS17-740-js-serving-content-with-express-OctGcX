@@ -1,0 +1,13 @@
+<% include partials/top %>
+<main>
+<h1>ALL CATS</h1>
+<p>We have a lot of cats. Check this out xD</p>
+<ul>
+  <% for (cat in cats) { %>
+  <li>
+    <h3><%=cat%></h3>
+  </li>
+  <% } %>
+</ul>
+</main>
+<% include partials/bot %>
