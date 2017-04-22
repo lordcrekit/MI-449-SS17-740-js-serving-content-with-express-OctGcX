@@ -27,6 +27,13 @@ section {
 }
 
 section h2 {
+  padding: 2px;
+  background-color: blue;
+  color: white;
+}
+
+section h3 {
+  padding: 2px;
   background-color: blue;
   color: white;
 }

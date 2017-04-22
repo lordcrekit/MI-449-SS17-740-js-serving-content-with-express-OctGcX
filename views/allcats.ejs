@@ -6,15 +6,19 @@
   <% for (catname in cats) { %>
   <% let cat = cats[catname] %>
   <li>
-    <h3><%=catname%></h3>
-    <p><%=cat.description%></p>
-    <figure>
-      <img src="img/<%=cat.thumbnail%>"/>
-    </figure>
-    <% let a = Array(Math.floor(Math.random()*15)).join('!') %>
-    <% let b = Array(Math.floor(Math.random()*8)).join('1') %>
-    <% let c = Array(Math.floor(Math.random()*3)).join('one') %>
-    <a href='/cat/<%=catname%>'>Read moar about <%=catname + a + b +c%></a>
+    <section>
+      <header><h3><%=catname%></h3></header>
+      <div class="content">
+        <p><%=cat.description%></p>
+        <figure>
+          <img src="img/<%=cat.thumbnail%>"/>
+        </figure>
+        <% let a = Array(Math.floor(Math.random()*15)).join('!') %>
+        <% let b = Array(Math.floor(Math.random()*8)).join('1') %>
+        <% let c = Array(Math.floor(Math.random()*3)).join('one') %>
+        <a href='/cat/<%=catname%>'>Read moar about <%=catname + a + b +c%></a>
+      </div>
+    </section>
   </li>
   <% } %>
 </ul>
