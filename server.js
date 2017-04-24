@@ -8,7 +8,12 @@ app.set('view_engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', function (req, res) {
-  res.render('index.ejs', {title: '🐱CATS🐱'})
+  jsonfile.readFile(CATS_DATA, function (err, obj) {
+    if (err) { res.send(err); return }
+    let keys = Object.keys(obj.cats)
+    let cat = keys[Math.floor(Math.random()*keys.length)]
+    res.render('index.ejs', {title: "CATS", catname: cat, cat: obj.cats[cat]})
+  })
 })
 
 const CATS_DATA = 'data/cats.json'

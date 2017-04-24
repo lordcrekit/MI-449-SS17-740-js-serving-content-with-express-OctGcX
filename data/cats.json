@@ -41,12 +41,16 @@
         {
           "src": "summer-on-purse.jpg",
           "description": "She lays down on our stuff and in our laundry"
+        },
+        {
+          "src": "summer-in-box.jpg",
+          "description": "We always have a box on the counter for her to sit in!"
         }
       ]
     },
     "echo": {
       "description": "He likes being bad",
-      "thumbnail": "doge.jpg",
+      "thumbnail": "echodoge.jpg",
       "images": [
         {
           "src": "echo-on-lap.jpg",
@@ -55,6 +59,10 @@
         {
           "src": "echo-with-hat.jpg",
           "description": "He doesn't mind having a hat. Until he moves at least."
+        },
+        {
+          "src": "echo-under-coffeetable.jpg",
+          "description": "He's wrapped around the leg!"
         }
       ]
     }

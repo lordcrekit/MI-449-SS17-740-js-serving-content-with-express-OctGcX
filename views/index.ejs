@@ -6,9 +6,11 @@
 <section>
   <header><h2>Cat of the day!</h2></header>
   <div class="content">
+    <h3><%=catname%></h3>
     <figure>
-      <img src="img/spockercat.jpg"/>
+      <img src="/img/<%=cat.thumbnail%>"/>
     </figure>
+    <a href="/cat/<%=catname%>">See this cat!</a>
   </div>
 </section>
 <section>
