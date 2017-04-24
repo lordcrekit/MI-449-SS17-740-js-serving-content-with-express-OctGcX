@@ -6,6 +6,7 @@
   "author": "William Norman <lordcrekit@gmail.com>",
   "license": "GPL-3.0",
   "scripts": {
+    "dev": "heroku local web",
     "lint:serverjs": "standard *.js",
     "lint:clientjs": "standard public/js/*.js",
     "lint:ejs": "ejslint views/*.ejs views/partials/*.ejs",
