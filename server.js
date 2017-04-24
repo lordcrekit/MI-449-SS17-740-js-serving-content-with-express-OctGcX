@@ -11,8 +11,8 @@ app.get('/', function (req, res) {
   jsonfile.readFile(CATS_DATA, function (err, obj) {
     if (err) { res.send(err); return }
     let keys = Object.keys(obj.cats)
-    let cat = keys[Math.floor(Math.random()*keys.length)]
-    res.render('index.ejs', {title: "CATS", catname: cat, cat: obj.cats[cat]})
+    let cat = keys[Math.floor(Math.random() * keys.length)]
+    res.render('index.ejs', {title: 'CATS', catname: cat, cat: obj.cats[cat]})
   })
 })
 
